@@ -34,5 +34,8 @@ class CashRegister
   
   def void_last_transaction
     @total = @total - @cost[-1]
+    if @cost.length == 0 
+      return 0.0
+    end
   end
 end
