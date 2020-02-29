@@ -33,10 +33,9 @@ class CashRegister
   end
   
   def void_last_transaction
-    remove_cost = @cost.pop
-    if @cost.length == 0 
+    if @cost.length == 1 
       return 0.0
     end
-    @total = @total - remove_cost
+    @total = @total - @cost[-1]
   end
 end
