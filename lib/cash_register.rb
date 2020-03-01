@@ -31,6 +31,9 @@ class CashRegister
   end
   
   def void_last_transaction
+    if (@@items.length == 1)
+      return 0.0
+    end
     @total = @total - @last_transaction
   end
 end
