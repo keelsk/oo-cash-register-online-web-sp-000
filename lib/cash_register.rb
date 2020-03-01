@@ -37,6 +37,5 @@ class CashRegister
       return 0.0
     end
     @total = @total - @cost[-1]
-    binding.pry
   end
 end
